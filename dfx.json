@@ -1,0 +1,19 @@
+{
+    "canisters": {
+        "testeng": {
+            "frontend": {
+                "entrypoint": "src/index.html"
+            },
+            "source": ["testing-eyy"],
+            "type": "assets"
+        }
+    },
+    "dfx": "0.17.0",
+    "version": 1,
+    "networks": {
+        "local": {
+            "bind": "0.0.0.0:8000",
+            "type": "ephemeral"
+        }
+    }
+}
