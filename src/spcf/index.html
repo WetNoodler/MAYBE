@@ -3,11 +3,80 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <title>RPSG!!</title>
+        <script>
+            function rng(z) {
+                x = Math.floor(Math.random() * (3 - 0) + 0);
+                gun = Math.floor(Math.random() * (100 - 1) + 1);
+                y = ""; c = ""; a = "";
+                if (z == 0) {
+                    document.getElementById("x").setAttribute('src', "rock.png");
+                    if (x == 0) {
+                        document.getElementById("y").setAttribute('src', "rock.png"); a = "DRAW";
+                    } else if (x == 1) {
+                        document.getElementById("y").setAttribute('src', "paper.png"); a = "YOU LOSE";
+                    } else if (x == 2) {
+                        document.getElementById("y").setAttribute('src', "scissors.png"); a = "YOU WIN";
+                    }
+                } else if (z == 1) {
+                    document.getElementById("x").setAttribute('src', "paper.png");
+                    if (x == 0) {
+                        document.getElementById("y").setAttribute('src', "rock.png"); a = "YOU WIN";
+                    } else if (x == 1) {
+                        document.getElementById("y").setAttribute('src', "paper.png"); a = "DRAW";
+                    } else if (x == 2) {
+                        document.getElementById("y").setAttribute('src', "scissors.png"); a = "YOU LOSE";
+                    }
+                } else if (z == 2) {
+                    document.getElementById("x").setAttribute('src', "scissors.png");
+                    if (x == 0) {
+                        document.getElementById("y").setAttribute('src', "rock.png"); a = "YOU LOSE";
+                    } else if (x == 1) {
+                        document.getElementById("y").setAttribute('src', "paper.png"); a = "YOU WIN";
+                    } else if (x == 2) {
+                        document.getElementById("y").setAttribute('src', "scissors.png"); a = "DRAW";
+                    }
+                } else if (z == 3) {
+                    if (gun <= 50) {
+                        document.getElementById("x").setAttribute('src', "ded.png");
+                        document.getElementById("y").setAttribute('src', "gun.png");
+                        a = "YOU LOSE";
+                    } else {
+                        document.getElementById("x").setAttribute('src', "gun.png");
+                        document.getElementById("y").setAttribute('src', "ded.png");
+                        a = "YOU WIN";
+                    }
+                }
+                document.getElementById("z").innerHTML = a;
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </head>
     <body>
-        <div class="yuji">IDATORI YOOJI!?!?</div>
-        <img src="yooji.png"/>
-        <div class="miku">HATSUNE MIKU?!?!</div>
-        <img src="Ofclboxart_cfm_Hatsune_Miku-illu.png" style="width: 350px;"/>
+        <h1 class="dos">RPS?</h1> <br>
+        <strong id="z" class="tres">Results Here :></strong>
+        <p class="uno">
+            <img id="x" src="yooji.png">
+            <img id="y" src="sugma.png" class="img-hor">
+        </p>
+        <button onclick="rng('0');topFunction();">ROCK</button> <br>
+        <button onclick="rng('1');topFunction();">PAPER</button> <br>
+        <button onclick="rng('2');topFunction();">SCISSORS</button> <br>
+        <br> <br> <br>
+        <img src="yooji.png"> <img src="sugma.png"> <br>
+        <h6 style="font-family: cursive;">Gamboa, Djinn & Miranda, Clarenz from CCIS4B S.Y. 2023-2024</h6>
+        <button onclick="rng('3');topFunction();">Gun..</button>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <a href="https://youtu.be/EuJ6UR_pD5s?si=_6UIkr27NFUkFjAG">
+                <img src="Ofclboxart_cfm_Hatsune_Miku-illu.png" style="width: 1300px;"/>
+            </a> 
+        </div>
+        
     </body>
 </html>

@@ -3,12 +3,49 @@ div {
     width: 150px;
 }
 
-div.yuji {
-    background-color: #ff8c8c;
-    color: #810000;
+button {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10;
+    padding-left: 20;
+    padding-right: 20;
+    font-size: 30;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-div.miku {
-    background-color: #00ffff;
-    color: #004444;
+body {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.uno {
+    font-size: 50;
+}
+
+.dos {
+    font-size: 50;
+    color: #fff;
+    background-color: #000;
+    border-radius: 13px;
+}
+
+.tres {
+    font-size: 25;
+}
+
+.img-hor {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+img {
+    width: 115px;
+    height: 115px;
 }
