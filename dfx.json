@@ -9,7 +9,7 @@
         }
     },
     "dfx": "0.17.0",
-    "version": 1.1,
+    "version": 1,
     "networks": {
         "local": {
             "bind": "0.0.0.0:8000",
